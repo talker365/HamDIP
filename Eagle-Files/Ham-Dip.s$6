@@ -1622,6 +1622,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R4" library="Seeed-Resistor-2016" deviceset="SMD-RES-220R-5%-1/8W(0805)" device="" value="330R"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="TRRS" library="SparkFun-Connectors" deviceset="AUDIO-JACK3" device=""/>
+<part name="TRRS1" library="SparkFun-Connectors" deviceset="AUDIO-JACK3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1656,6 +1657,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R4" gate="G$1" x="111.76" y="154.94" rot="R90"/>
 <instance part="P+3" gate="VCC" x="111.76" y="163.83"/>
 <instance part="TRRS" gate="G$1" x="101.6" y="101.6"/>
+<instance part="TRRS1" gate="G$1" x="101.6" y="76.2"/>
 </instances>
 <busses>
 </busses>
