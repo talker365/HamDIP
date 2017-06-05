@@ -997,7 +997,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.25" y1="38.75" x2="12.376396875" y2="38.75" width="0.1524" layer="1"/>
 <wire x1="10.5" y1="38.5" x2="10.57239375" y2="38.37761875" width="0.1524" layer="1"/>
 <wire x1="10.5" y1="38.5" x2="10.72" y2="38.23" width="0.1524" layer="1"/>
-<wire x1="23.42" y1="38.23" x2="37.01" y2="44.59" width="0" layer="19" extent="1-1"/>
+<wire x1="37.01" y1="44.59" x2="23.42" y2="38.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC-1V8">
 <contactref element="U$2" pad="29"/>

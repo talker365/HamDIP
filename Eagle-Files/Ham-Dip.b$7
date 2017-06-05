@@ -1240,14 +1240,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$2" pad="31"/>
 </signal>
 <signal name="GPIO-2">
-<contactref element="U$2" pad="56"/>
 <contactref element="DB-9" pad="7"/>
-<wire x1="21.6916" y1="6.35" x2="39.55" y2="24.27" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="54"/>
+<wire x1="21.6916" y1="6.35" x2="39.55" y2="21.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO-1">
-<contactref element="U$2" pad="54"/>
 <contactref element="DB-9" pad="8"/>
-<wire x1="18.9484" y1="6.35" x2="39.55" y2="21.73" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="56"/>
+<wire x1="18.9484" y1="6.35" x2="39.55" y2="24.27" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

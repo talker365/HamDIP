@@ -159,9 +159,10 @@
 <wire x1="4.2672" y1="49.9872" x2="41.148" y2="49.9872" width="0.3048" layer="20"/>
 <wire x1="41.148" y1="49.9872" x2="41.148" y2="0" width="0.3048" layer="20"/>
 <wire x1="41.148" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
-<text x="17.8816" y="35.2044" size="1.778" layer="21">FEL</text>
+<text x="16.8656" y="29.3116" size="1.778" layer="21" rot="R90">FEL</text>
 <text x="34.29" y="39.37" size="1.778" layer="21" rot="R90">CW-KEY</text>
 <text x="8.89" y="39.37" size="1.778" layer="21" rot="R90">AUDIO</text>
+<text x="30.5816" y="26.3144" size="1.778" layer="21" rot="R90">XMIT</text>
 </plain>
 <libraries>
 <library name="JKW_CHIP">
