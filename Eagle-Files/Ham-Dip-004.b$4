@@ -50,6 +50,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="yes"/>
+<layer number="58" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="yes"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="no" active="no"/>
@@ -134,6 +135,7 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -833,6 +835,26 @@
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
 </package>
+<package name="TSOC6">
+<description>&lt;b&gt;TSOC 6&lt;/b&gt;</description>
+<circle x="-2.413" y="-2.286" radius="0.254" width="0.1524" layer="21"/>
+<wire x1="1.8542" y1="1.8034" x2="1.8542" y2="-1.8034" width="0.254" layer="21"/>
+<wire x1="-1.8542" y1="-1.8034" x2="-1.8542" y2="1.8034" width="0.254" layer="21"/>
+<rectangle x1="-1.3716" y1="-2.0828" x2="-1.1684" y2="-1.0668" layer="51"/>
+<rectangle x1="-0.1016" y1="-2.0828" x2="0.1016" y2="-1.0668" layer="51"/>
+<rectangle x1="1.1684" y1="-2.0828" x2="1.3716" y2="-1.0668" layer="51"/>
+<rectangle x1="1.1684" y1="1.0668" x2="1.3716" y2="2.0828" layer="51"/>
+<rectangle x1="-0.1016" y1="1.0668" x2="0.1016" y2="2.0828" layer="51"/>
+<rectangle x1="-1.3716" y1="1.0668" x2="-1.1684" y2="2.0828" layer="51"/>
+<smd name="1" x="-1.27" y="-1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="2" x="0" y="-1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="3" x="1.27" y="-1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="4" x="1.27" y="1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="5" x="0" y="1.7002" dx="0.53" dy="1.53" layer="1"/>
+<smd name="6" x="-1.27" y="1.7002" dx="0.53" dy="1.53" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="Seeed-Transistor-2016">
@@ -1478,6 +1500,22 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J1" library="Seeed-Connector -2016" package="HW4-SMD-2.0" value="H4P-SMD-2.0" x="25.82824375" y="38.10165"/>
 <element name="I2C-PWR" library="JKW_CHIP" package="SMD_SJ_3WAY_OPEN" value="GROVE POWER" x="19.47824375" y="40.64165" rot="MR90"/>
 <element name="CN1" library="adafruit" package="JST-PH-2-SMT" value="" x="13.12824375" y="40.64165"/>
+<element name="U1" library="JKW_CHIP" package="TSOC6" value="DS2431P" x="12.19078125" y="31.408190625" rot="R270">
+<attribute name="ASSEMBLE" value="" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value="IC, 1024-Bit, 1-Wire EEPROM, TSOC6" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="FOOTPRINT" value="TSOC6" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="LINK" value="http://www.digikey.com/product-detail/en/DS2431P%2BT%26R/DS2431P%2BT%26RCT-ND/3647900" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="MFG" value="DIGIKEY" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="DS2431P+T&amp;RCT-ND" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="PART_TYPE" value="IC" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="PRICE" value="0.98" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="TOLLERANCE" value="" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="VENDOR" value="MAXIM" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="VENDOR_PART_NUMBER" value="DS2431P+T&amp;R" x="12.19078125" y="31.408190625" size="0.17018125" layer="27" font="vector" rot="R270" display="off"/>
+</element>
+<element name="R6" library="Seeed-Resistor-2016" package="R0805" value="1K" x="8.042528125" y="31.49285">
+<attribute name="MPN" value="RC0805JR-07220RL" x="3.2170125" y="37.334265625" size="0.17018125" layer="27" font="vector" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1528,6 +1566,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.66824375" y1="19.05165" x2="15.16024375" y2="19.47165" width="0" layer="1"/>
 <via x="15.66824375" y="15.24165" extent="1-16" drill="0.35"/>
 <via x="23.28824375" y="15.24165" extent="1-16" drill="0.35"/>
+<contactref element="U1" pad="1"/>
 </signal>
 <signal name="VCC-1V8">
 <contactref element="U$2" pad="VCC1V8"/>
@@ -1937,7 +1976,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.22384375" y1="42.92605" x2="1.69824375" y2="44.45165" width="0.2" layer="16"/>
 <wire x1="4.658425" y1="42.92605" x2="3.22384375" y2="42.92605" width="0.2" layer="16"/>
 <wire x1="19.47824375" y1="39.11765" x2="8.466825" y2="39.11765" width="0.2" layer="16"/>
-<wire x1="8.466825" y1="39.11765" x2="4.658425" y2="42.92605" width="0.2" layer="16"/>
+<wire x1="8.466825" y1="39.11765" x2="8.2922375" y2="39.2922375" width="0.2" layer="16"/>
+<wire x1="8.2922375" y1="39.2922375" x2="4.658425" y2="42.92605" width="0.2" layer="16"/>
 <wire x1="35.17824375" y1="37.25165" x2="37.17824375" y2="39.25165" width="0.1524" layer="1"/>
 <wire x1="30.92824375" y1="33.00165" x2="35.17824375" y2="37.25165" width="0.1524" layer="16"/>
 <wire x1="30.17824375" y1="33.00165" x2="30.92824375" y2="33.00165" width="0.1524" layer="16"/>
@@ -1947,6 +1987,13 @@ Please make sure your boards conform to these design rules.</description>
 <via x="35.17824375" y="37.25165" extent="1-16" drill="0.3302"/>
 <via x="30.17824375" y="33.00165" extent="1-16" drill="0.3302"/>
 <via x="25.92824375" y="33.00165" extent="1-16" drill="0.3302"/>
+<contactref element="R6" pad="2"/>
+<wire x1="9" y1="31.5" x2="8.25" y2="30.75" width="0.1524" layer="1"/>
+<wire x1="9" y1="39.25" x2="9" y2="31.5" width="0.1524" layer="16"/>
+<wire x1="8.25" y1="39.25" x2="9" y2="39.25" width="0.1524" layer="16"/>
+<wire x1="8.25" y1="30.75" x2="8.042528125" y2="30.60385" width="0.1524" layer="1"/>
+<wire x1="8.25" y1="39.25" x2="8.2922375" y2="39.2922375" width="0.1524" layer="16"/>
+<via x="9" y="31.5" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$5">
 <contactref element="I2C-PWR" pad="2"/>
@@ -1983,6 +2030,21 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.17824375" y1="25.50165" x2="15.17824375" y2="25.00165" width="0.1524" layer="1"/>
 <wire x1="11.92824375" y1="19.25165" x2="11.80744375" y2="19.22945" width="0.1524" layer="1"/>
 <wire x1="15.17824375" y1="25.50165" x2="15.31264375" y2="25.56765" width="0.1524" layer="1"/>
+</signal>
+<signal name="LCD-D2">
+<contactref element="U1" pad="2"/>
+<contactref element="U$2" pad="LCD-D2"/>
+<contactref element="R6" pad="1"/>
+<wire x1="9.5" y1="32.25" x2="8.25" y2="32.25" width="0.1524" layer="1"/>
+<wire x1="10.25" y1="31.5" x2="9.5" y2="32.25" width="0.1524" layer="1"/>
+<wire x1="8.25" y1="32.25" x2="8.042528125" y2="32.38185" width="0.1524" layer="1"/>
+<wire x1="10.25" y1="31.5" x2="10.49058125" y2="31.408190625" width="0.1524" layer="1"/>
+<wire x1="6.25" y1="32.25" x2="8" y2="32.25" width="0.1524" layer="1"/>
+<wire x1="4.25" y1="30.25" x2="6.25" y2="32.25" width="0.1524" layer="1"/>
+<wire x1="2.75" y1="30.25" x2="4.25" y2="30.25" width="0.1524" layer="1"/>
+<wire x1="1.75" y1="29.25" x2="2.75" y2="30.25" width="0.1524" layer="1"/>
+<wire x1="8" y1="32.25" x2="8.042528125" y2="32.38185" width="0.1524" layer="1"/>
+<wire x1="1.75" y1="29.25" x2="1.69824375" y2="29.21165" width="0.1524" layer="1"/>
 </signal>
 </signals>
 </board>
