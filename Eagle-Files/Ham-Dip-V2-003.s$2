@@ -4903,7 +4903,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="C1" library="Seeed-Capacitor-2016" deviceset="CERAMIC-1UF-25V-10%-X7R(0805)" device="" value="4.7uF"/>
 <part name="C7" library="Seeed-Capacitor-2016" deviceset="CERAMIC-1UF-25V-10%-X7R(0805)" device="" value="4.7uF"/>
 <part name="D3" library="Seeed-Diode" library_urn="urn:adsk.eagle:library:467" deviceset="DIODE-GEN-PURPOSE-1KV-1A(DO-214AC)" device="" value="1N4007"/>
-<part name="MIC-LVL" library="HalfBakedCircuits" deviceset="TC33X" device="" value="1K"/>
+<part name="MIC-LEVEL" library="HalfBakedCircuits" deviceset="TC33X" device="" value="1K"/>
 <part name="U$4" library="HalfBakedCircuits" deviceset="HAM-DIP" device=""/>
 </parts>
 <sheets>
@@ -4912,6 +4912,7 @@ JST PH 2-pin thru-home side entry</description>
 <text x="-35.56" y="142.24" size="1.778" layer="91">Pin-1 (Housing / Sleeve Grounded)</text>
 <text x="-35.56" y="139.7" size="1.778" layer="91">Pin-3 (Ring 1)</text>
 <text x="-35.56" y="134.62" size="1.778" layer="91">Pin-2 (TIP)</text>
+<text x="-35.56" y="132.08" size="1.778" layer="91">Pin-4 (Ring 2)</text>
 <text x="231.14" y="20.32" size="1.778" layer="91">Pin-1 (Housing / Sleeve Grounded)</text>
 <text x="231.14" y="17.78" size="1.778" layer="91">Pin-3 (Ring 1)</text>
 <text x="231.14" y="12.7" size="1.778" layer="91">Pin-2 (TIP)</text>
@@ -4986,7 +4987,7 @@ JST PH 2-pin thru-home side entry</description>
 <instance part="C1" gate="G$1" x="38.1" y="161.29" rot="R270"/>
 <instance part="C7" gate="G$1" x="38.1" y="153.67" rot="R270"/>
 <instance part="D3" gate="G$1" x="29.464" y="157.48"/>
-<instance part="MIC-LVL" gate="G$1" x="154.94" y="165.1" rot="R90"/>
+<instance part="MIC-LEVEL" gate="G$1" x="154.94" y="165.1" rot="R90"/>
 <instance part="U$4" gate="G$1" x="-60.96" y="-35.56"/>
 </instances>
 <busses>
@@ -5155,7 +5156,7 @@ JST PH 2-pin thru-home side entry</description>
 <junction x="48.26" y="149.86"/>
 </segment>
 <segment>
-<pinref part="MIC-LVL" gate="G$1" pin="3"/>
+<pinref part="MIC-LEVEL" gate="G$1" pin="3"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -5314,6 +5315,18 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="D1" gate="G$1" pin="+"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-50.8" y1="187.452" x2="-50.8" y2="181.61" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CW-KEY-3" class="0">
+<segment>
+<pinref part="CW-JACK" gate="G$1" pin="RING2"/>
+<wire x1="-60.96" y1="132.08" x2="-48.26" y2="132.08" width="0.1524" layer="91"/>
+<label x="-50.8" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CSID3"/>
+<wire x1="182.88" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
+<label x="170.18" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XMIT" class="0">
@@ -5579,13 +5592,13 @@ JST PH 2-pin thru-home side entry</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="MIC-LVL" gate="G$1" pin="2"/>
+<pinref part="MIC-LEVEL" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="165.1" x2="144.78" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="MIC-LVL" gate="G$1" pin="1"/>
+<pinref part="MIC-LEVEL" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="167.64" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="167.64" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="170.18" x2="173.99" y2="170.18" width="0.1524" layer="91"/>
