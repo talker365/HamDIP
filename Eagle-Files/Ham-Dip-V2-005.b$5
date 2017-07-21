@@ -175,7 +175,7 @@
 <wire x1="11.85215" y1="31.831484375" x2="11.93680625" y2="31.662165625" width="0" layer="112"/>
 <wire x1="11.93680625" y1="15.15381875" x2="12.106121875" y2="14.984503125" width="0" layer="112"/>
 <wire x1="27.005965625" y1="31.492853125" x2="27.00596875" y2="31.831484375" width="0" layer="112"/>
-<text x="13.315184375" y="48.3652625" size="1.016" layer="122" font="vector" ratio="12" rot="MR180">By: N4LDR / WD4VA
+<text x="14.815184375" y="19.3652625" size="1.016" layer="122" font="vector" ratio="12" rot="SMR180">N4LDR / WD4VA
 
 </text>
 <text x="16.31518125" y="60.656196875" size="1.27" layer="122" font="vector" ratio="18" rot="MR180">HAM-DIP 

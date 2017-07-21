@@ -195,7 +195,7 @@
 <text x="25.6" y="25.6" size="0.6096" layer="21" ratio="17" rot="SR90">C7-4.7uF</text>
 <text x="25.5" y="31" size="0.6096" layer="21" ratio="17" rot="SR90">R4-1K</text>
 <text x="28.5" y="31" size="0.6096" layer="21" ratio="17" rot="SR90">R5-10K</text>
-<text x="31.5" y="31" size="0.6096" layer="21" ratio="17" rot="SR90">R6-330</text>
+<text x="31.5" y="31.5" size="0.6096" layer="21" ratio="17" rot="SR90">R6-330</text>
 <text x="15.1329" y="44.654259375" size="1.27" layer="21" ratio="17">I2C PWR</text>
 <text x="28.1329" y="38.154259375" size="1.27" layer="21" ratio="17">I2C</text>
 <text x="17.6329" y="35.654259375" size="1.27" layer="21" ratio="17">MIC LVL</text>

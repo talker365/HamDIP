@@ -199,7 +199,7 @@
 <text x="15.1329" y="44.654259375" size="1.27" layer="21" ratio="17">I2C PWR</text>
 <text x="28.1329" y="38.154259375" size="1.27" layer="21" ratio="17">I2C</text>
 <text x="17.6329" y="35.654259375" size="1.27" layer="21" ratio="17">MIC LVL</text>
-<text x="23" y="22" size="0.6096" layer="21" ratio="17" rot="SR90">COR</text>
+<text x="23" y="21.5" size="0.6096" layer="21" ratio="17" rot="SR90">COR</text>
 <text x="23" y="17.5" size="0.6096" layer="21" ratio="17" rot="SR90">PTT</text>
 <text x="28.5" y="21.5" size="0.6096" layer="21" ratio="17" rot="SR90">RX</text>
 <text x="31.5" y="21.5" size="0.6096" layer="21" ratio="17" rot="SR90">TX</text>

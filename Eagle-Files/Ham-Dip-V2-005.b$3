@@ -166,8 +166,8 @@
 <text x="4.4245" y="58.658659375" size="1.778" layer="21" ratio="17">PWR</text>
 <text x="7.6329" y="38.154259375" size="1.27" layer="21" ratio="17">5V IN</text>
 <text x="10.368046875" y="9.35493125" size="0.8128" layer="122" font="vector" ratio="18" rot="SMR180">1 - AUDIO OUT    6 - AUDIO IN       
-2 - TX           7 - GPIO 2 
-3 - RX           8 - GPIO 1 
+2 - TX           7 - GPIO 1 
+3 - RX           8 - GPIO 2 
 4 - PTT          9 - ANALOG IN
 5 - GND</text>
 <wire x1="29.715028125" y1="14.89984375" x2="29.715028125" y2="14.984503125" width="0" layer="112"/>
@@ -2010,7 +2010,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="CC0805KKX7R8BB105" x="20.8973" y="27.110259375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="1uf" x="20.8973" y="27.110259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DB-9" library="SparkFun-Connectors" package="DB9" value="" x="20.8329" y="12.024259375" rot="MR180">
+<element name="DB-9" library="SparkFun-Connectors" package="DB9" value="Female" x="20.8329" y="12.024259375" rot="MR180">
 <attribute name="PROD_ID" value="CONN-08194" x="20.8329" y="12.024259375" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="FEL" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD" value="Flash" x="36.665559375" y="55.543121875" rot="R180">
@@ -2201,10 +2201,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14.3424" y1="38.2276125" x2="14.3424" y2="50.60664375" width="0.3048" layer="16"/>
 <wire x1="14.3424" y1="50.60664375" x2="15.5" y2="51.76424375" width="0.3048" layer="16"/>
 <wire x1="15.5" y1="52.5" x2="16" y2="53" width="0.3048" layer="16"/>
-<wire x1="16" y1="53" x2="17.5" y2="53" width="0.3048" layer="16"/>
-<via x="17.5" y="53" extent="1-16" drill="0.35"/>
+<wire x1="16" y1="53" x2="16.5" y2="53" width="0.3048" layer="16"/>
+<via x="16.5" y="53" extent="1-16" drill="0.35"/>
 <wire x1="19.0029" y1="52.814259375" x2="18.817159375" y2="53" width="0.3048" layer="1"/>
-<wire x1="18.817159375" y1="53" x2="17.5" y2="53" width="0.3048" layer="1"/>
+<wire x1="18.817159375" y1="53" x2="16.5" y2="53" width="0.3048" layer="1"/>
 </signal>
 <signal name="AUDIO-IN">
 <contactref element="C5-1UF" pad="2"/>
@@ -2254,18 +2254,15 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PTT">
 <contactref element="DB-9" pad="4"/>
-<contactref element="U$5" pad="3"/>
 <contactref element="D1" pad="-"/>
 <contactref element="AUDIO-JACK" pad="RING2"/>
 <wire x1="25.0978" y1="16.727528125" x2="25.0978" y2="17.059159375" width="0.254" layer="1"/>
-<wire x1="25.0978" y1="17.059159375" x2="26.2789" y2="18.240259375" width="0.254" layer="1"/>
 <wire x1="23.6029" y1="13.444259375" x2="23.6029" y2="15.232628125" width="0.254" layer="1"/>
 <wire x1="23.6029" y1="15.232628125" x2="25.0978" y2="16.727528125" width="0.254" layer="1"/>
 <wire x1="28.44226875" y1="16.8356" x2="30.47373125" y2="16.8356" width="0.254" layer="1"/>
 <wire x1="30.47373125" y1="16.8356" x2="30.6374" y2="16.99926875" width="0.254" layer="1"/>
 <wire x1="30.6374" y1="16.99926875" x2="30.6374" y2="18.6374" width="0.254" layer="1"/>
 <wire x1="30.6374" y1="18.6374" x2="32.5" y2="20.5" width="0.254" layer="1"/>
-<wire x1="26.2789" y1="18.240259375" x2="27.037609375" y2="18.240259375" width="0.254" layer="1"/>
 <wire x1="27.037609375" y1="18.240259375" x2="28.44226875" y2="16.8356" width="0.254" layer="1"/>
 <wire x1="32.5" y1="20.5" x2="32.5" y2="21.155559375" width="0.254" layer="1"/>
 <wire x1="32.5" y1="21.155559375" x2="32.6957" y2="21.351259375" width="0.254" layer="1"/>
@@ -2284,11 +2281,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="35" y1="28.5" x2="35.04279375" y2="28.54279375" width="0.3048" layer="16"/>
 <wire x1="35.04279375" y1="28.54279375" x2="35.04279375" y2="45.93074375" width="0.3048" layer="16"/>
 <wire x1="35.5" y1="55.5" x2="35" y2="56" width="0.3048" layer="16"/>
-<wire x1="35" y1="56" x2="17.5" y2="56" width="0.3048" layer="16"/>
+<wire x1="35" y1="56" x2="16.5" y2="56" width="0.3048" layer="16"/>
 <wire x1="35.5" y1="46.38795" x2="35.5" y2="55.5" width="0.3048" layer="16"/>
-<via x="17.5" y="56" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="16.5" y="56" extent="1-16" drill="0.35" shape="octagon"/>
 <wire x1="19.0029" y1="55.814259375" x2="18.817159375" y2="56" width="0.3048" layer="1"/>
-<wire x1="18.817159375" y1="56" x2="17.5" y2="56" width="0.3048" layer="1"/>
+<wire x1="18.817159375" y1="56" x2="16.5" y2="56" width="0.3048" layer="1"/>
+<contactref element="U$5" pad="3"/>
+<wire x1="26.2789" y1="18.240259375" x2="27.037609375" y2="18.240259375" width="0" layer="19" extent="1-1"/>
+<wire x1="25.0978" y1="17.059159375" x2="26.2789" y2="18.240259375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CW-KEY-1">
 <contactref element="CW-JACK" pad="TIP"/>
@@ -2364,9 +2364,23 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="GPIO-2">
 <contactref element="DB-9" pad="7"/>
+<contactref element="U$2" pad="CSID6"/>
+<wire x1="19.4529" y1="10.604259375" x2="20.452765625" y2="10.604259375" width="0.3048" layer="1"/>
+<wire x1="34.05621875" y1="8.722253125" x2="36.276096875" y2="6.502371875" width="0.3048" layer="1"/>
+<wire x1="20.452765625" y1="10.604259375" x2="22.334771875" y2="8.722253125" width="0.3048" layer="1"/>
+<wire x1="22.334771875" y1="8.722253125" x2="34.05621875" y2="8.722253125" width="0.3048" layer="1"/>
+<wire x1="36.276096875" y1="6.502371875" x2="37" y2="5.77846875" width="0.3048" layer="1"/>
+<wire x1="37" y1="4.747159375" x2="37.3429" y2="4.404259375" width="0.3048" layer="1"/>
+<wire x1="37" y1="5.77846875" x2="37" y2="4.747159375" width="0.3048" layer="1"/>
 </signal>
 <signal name="GPIO-1">
 <contactref element="DB-9" pad="8"/>
+<contactref element="U$2" pad="CSID4"/>
+<wire x1="34.51125625" y1="9.17945625" x2="35.20948125" y2="9.17768125" width="0.3048" layer="1"/>
+<wire x1="35.20948125" y1="9.17768125" x2="37.3429" y2="6.944259375" width="0.3048" layer="1"/>
+<wire x1="22.2129" y1="10.604259375" x2="23.222765625" y2="10.604259375" width="0.3048" layer="1"/>
+<wire x1="23.222765625" y1="10.604259375" x2="24.64756875" y2="9.17945625" width="0.3048" layer="1"/>
+<wire x1="24.64756875" y1="9.17945625" x2="34.51125625" y2="9.17945625" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="MAX-232" pad="6"/>
@@ -2717,6 +2731,10 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$23">
 </signal>
 <signal name="N$24">
+</signal>
+<signal name="N$25">
+</signal>
+<signal name="N$26">
 </signal>
 </signals>
 </board>

@@ -5412,7 +5412,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="U$5" library="Seeed-Transistor-2016" deviceset="SMD-TRANSISTORS-NPN-40V-200MA-MMBT3904LT1G(SOT-23)" device="" value="MMBT3904LT1G"/>
 <part name="R5-10K" library="Seeed-Resistor-2016" deviceset="SMD-RES-10K-1%-1/8W(0805)" device="" value="10K"/>
 <part name="C5-1UF" library="Seeed-Capacitor-2016" deviceset="CERAMIC-1UF-25V-10%-X7R(0805)" device="" value="1uf"/>
-<part name="DB-9" library="SparkFun-Connectors" deviceset="DB9" device="FEMALE"/>
+<part name="DB-9" library="SparkFun-Connectors" deviceset="DB9" device="FEMALE" value="Female"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FEL" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="Flash"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -5556,10 +5556,10 @@ CW-Key &amp; Power</text>
 <instance part="D2" gate="G$1" x="103.378" y="143.764" rot="R270"/>
 <instance part="R2-330" gate="G$1" x="103.378" y="151.384" rot="R90"/>
 <instance part="R6-330" gate="G$1" x="80.01" y="134.62"/>
-<instance part="P+4" gate="VCC" x="103.378" y="159.512"/>
+<instance part="P+4" gate="VCC" x="103.378" y="162.052"/>
 <instance part="C7-4.7UF" gate="G$1" x="95.758" y="138.43" rot="R270"/>
 <instance part="C6-4.7UF" gate="G$1" x="95.758" y="130.81" rot="R270"/>
-<instance part="D3" gate="G$1" x="87.122" y="134.62"/>
+<instance part="D3" gate="G$1" x="89.662" y="134.62"/>
 <instance part="MIC-LVL" gate="G$1" x="55.88" y="132.08" rot="R90"/>
 <instance part="U$4" gate="G$1" x="223.52" y="-15.24"/>
 <instance part="GND24" gate="1" x="-10.16" y="134.62"/>
@@ -5782,12 +5782,12 @@ CW-Key &amp; Power</text>
 <segment>
 <pinref part="R2-330" gate="G$1" pin="2"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="103.378" y1="156.972" x2="103.378" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="103.378" y1="159.512" x2="103.378" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C7-4.7UF" gate="G$1" pin="1"/>
-<wire x1="103.378" y1="154.94" x2="103.378" y2="155.194" width="0.1524" layer="91"/>
-<wire x1="95.758" y1="142.24" x2="95.758" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="95.758" y1="154.94" x2="103.378" y2="154.94" width="0.1524" layer="91"/>
-<junction x="103.378" y="154.94"/>
+<wire x1="103.378" y1="157.48" x2="103.378" y2="155.194" width="0.1524" layer="91"/>
+<wire x1="95.758" y1="142.24" x2="95.758" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="95.758" y1="157.48" x2="103.378" y2="157.48" width="0.1524" layer="91"/>
+<junction x="103.378" y="157.48"/>
 </segment>
 </net>
 <net name="PTT" class="0">
@@ -5797,19 +5797,18 @@ CW-Key &amp; Power</text>
 <label x="160.02" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="C"/>
 <label x="-43.18" y="149.86" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="-"/>
-<wire x1="-53.34" y1="148.59" x2="-53.34" y2="148.082" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="148.082" x2="-53.34" y2="147.828" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="147.828" x2="-53.34" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="148.59" x2="-53.34" y2="147.828" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="147.828" x2="-35.56" y2="147.828" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="147.828" x2="-35.56" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="AUDIO-JACK" gate="G$1" pin="RING2"/>
 <wire x1="-35.56" y1="132.08" x2="-13.97" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-13.97" y1="132.08" x2="-13.97" y2="142.24" width="0.1524" layer="91"/>
-<junction x="-53.34" y="148.082"/>
 <junction x="-13.97" y="142.24"/>
+<pinref part="U$5" gate="G$1" pin="C"/>
+<wire x1="-53.34" y1="147.32" x2="-53.34" y2="147.828" width="0.1524" layer="91"/>
+<junction x="-53.34" y="147.828"/>
 </segment>
 </net>
 <net name="CW-KEY-1" class="0">
@@ -5889,12 +5888,22 @@ CW-Key &amp; Power</text>
 <wire x1="180.34" y1="124.46" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
 <label x="180.34" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CSID6"/>
+<wire x1="-20.32" y1="-20.32" x2="-15.24" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-15.24" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO-1" class="0">
 <segment>
 <pinref part="DB-9" gate="G$1" pin="8"/>
 <wire x1="180.34" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 <label x="180.34" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CSID4"/>
+<wire x1="-20.32" y1="-17.78" x2="-15.24" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-15.24" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -6038,7 +6047,6 @@ CW-Key &amp; Power</text>
 <net name="HPL" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="HPL"/>
-<wire x1="-53.34" y1="23.114" x2="-53.34" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="22.86" x2="-58.42" y2="22.86" width="0.1524" layer="91"/>
 <label x="-58.42" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -6062,8 +6070,8 @@ CW-Key &amp; Power</text>
 <pinref part="C6-4.7UF" gate="G$1" pin="1"/>
 <pinref part="C7-4.7UF" gate="G$1" pin="2"/>
 <pinref part="D3" gate="G$1" pin="-"/>
-<wire x1="90.932" y1="134.62" x2="95.758" y2="134.62" width="0.1524" layer="91"/>
-<junction x="90.932" y="134.62"/>
+<wire x1="93.472" y1="134.62" x2="95.758" y2="134.62" width="0.1524" layer="91"/>
+<junction x="93.472" y="134.62"/>
 <junction x="95.758" y="134.62"/>
 <wire x1="95.758" y1="134.62" x2="98.298" y2="134.62" width="0.1524" layer="91"/>
 </segment>
@@ -6087,7 +6095,7 @@ CW-Key &amp; Power</text>
 <segment>
 <pinref part="R6-330" gate="G$1" pin="2"/>
 <pinref part="D3" gate="G$1" pin="+"/>
-<wire x1="83.312" y1="134.62" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="85.852" y1="134.62" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6161,8 +6169,13 @@ CW-Key &amp; Power</text>
 </sheets>
 <errors>
 <approved hash="204,1,43.18,17.78,U$2,VCC-1V8,,,,"/>
+<approved hash="104,1,43.18,22.86,U$2,VCC-5V,VCC,,,"/>
+<approved hash="204,1,-53.34,25.4,U$2,VCC-5V,,,,"/>
+<approved hash="204,1,-20.32,15.24,U$2,VCC3V3,,,,"/>
+<approved hash="104,1,43.18,20.32,U$2,VCC3V3,VCC/2,,,"/>
 <approved hash="202,1,223.52,124.46,MAX-232,T2IN,,,,"/>
 <approved hash="202,1,259.08,119.38,MAX-232,R2IN,,,,"/>
+<approved hash="113,1,167.013,11.6455,I2C-PWR,,,,,"/>
 </errors>
 </schematic>
 </drawing>
